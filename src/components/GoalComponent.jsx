@@ -96,6 +96,7 @@ const GoalComponent = ({ currentBalance }) => {
                     {daysLeft > 0 ? `${daysLeft} days left` : "Deadline passed"})
                   </p>
                   <p><strong>Current Balance:</strong> {currentBalance}</p>
+                  <p><strong>Status:</strong> {currentBalance >= goal.targetAmount ? 'Achieved' : 'In Progress'}</p>
                   <p><strong>Average per day:</strong> {averagePerDay}</p>
                   <p><strong>Description:</strong> {goal.description}</p>
                   <button onClick={() => handleDeleteGoal(goal.id)}>Remove Goal</button>
