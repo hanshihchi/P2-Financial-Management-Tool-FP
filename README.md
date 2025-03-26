@@ -1,4 +1,3 @@
-```markdown
 # Financial Management Tool
 
 A multi-page financial management application built with React, React-Bootstrap, and Firebase Firestore. This tool allows users to manage personal finances by tracking incomes and expenses, share group expenses, and set financial goals with state tracking and insightful analytics. The project follows a functional programming approach with modularized components and persistent storage using Firestore.
@@ -129,6 +128,6 @@ This project is licensed under the MIT License. See the LICENSE file for details
         - Prompt: (code) (Error) Help me fix the error
       - Used for writing README.md(Features, etc)
         - Prompt: write a README for my project(Feature, structure, etc)
-      - Used for writing hypothetical example in FP_Demonstration.md
-        - Prompt: (code) Provide an hypothetical example that would break the concept
+      - Used for writing hypothetical examples in FP_Demonstration.md
+        - Prompt: (code) Provide a hypothetical example that would break the concept
         - Verified through understanding the concepts
