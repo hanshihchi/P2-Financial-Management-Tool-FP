@@ -2,6 +2,7 @@
 - Hosting URL: https://financial-management-ccfd9.web.app
 - Video Demonstration:
 - FP Demonstration:
+
 A multi-page financial management application built with React, React-Bootstrap, and Firebase Firestore. This tool allows users to manage personal finances by tracking incomes and expenses, share group expenses, and set financial goals with state tracking and insightful analytics. The project follows a functional programming approach with modularized components and persistent storage using Firestore.
 
 ## Features
