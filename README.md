@@ -31,6 +31,10 @@ A multi-page financial management application built with React, React-Bootstrap,
   - All transactions, groups, and goals are stored in Firebase Firestore.
   - Data persists across page reloads and sessions.
 
+## Interface Mockups
+
+- https://www.figma.com/design/ObkAzcs37NByODXT2PFKzd/Financial-Management-Tool?node-id=0-1&t=wiDF27qpwAuNHy8m-1
+
 ## Installation
 
 1. **Clone the Repository**
