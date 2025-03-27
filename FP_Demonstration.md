@@ -62,7 +62,7 @@ setIncomes(prev => [...prev, newIncome]);
 Directly mutating the state array, which can lead to bugs:
 
 ```javascript
-// Bad practice: Mutating the state directly
+// Mutating the state directly
 incomes.push(newIncome);
 setIncomes(incomes); // This directly changes the original array
 ```
@@ -90,7 +90,7 @@ if (onNewIncome) {
 A language where functions cannot be passed as arguments, forcing the use of global state or other workarounds (this is a hypothetical scenario since JavaScript supports first-class functions by default).
 
 ```javascript
-// Hypothetical scenario (not valid in JavaScript):
+// Hypothetical scenario (other programming language):
 // function doSomething() {
 //    // Cannot pass a function as an argument
 // }
@@ -246,7 +246,7 @@ export default function createTransactionModule() {
 A poor design would expose functions and variables directly into the global scope without encapsulation. This can lead to naming collisions and unpredictable behavior.
 
 ```javascript
-// Bad Example: No module encapsulation, polluting the global scope
+// No module encapsulation, polluting the global scope
 var globalAddTransaction = function(transactions, transaction) {
   transactions.push(transaction);
   return transactions;
@@ -286,7 +286,7 @@ const newState = transactionModule.addTransaction([], { id: 1, amount: 50 });
 A bad approach would be to instantiate objects directly without any abstraction, which may result in repetitive code and less flexibility. For example, if we manually create transaction objects and duplicate logic everywhere:
 
 ```javascript
-// Bad Example: Direct instantiation without a factory
+// Direct instantiation without a factory
 function Transaction(amount, category) {
   this.amount = amount;
   this.category = category;
@@ -329,7 +329,7 @@ export default db;
 A poor design would initialize Firebase multiple times, leading to multiple instances of the app. This can cause inconsistent data and performance issues.
 
 ```javascript
-// Bad Example: Multiple Firebase initializations
+// Multiple Firebase initializations
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
