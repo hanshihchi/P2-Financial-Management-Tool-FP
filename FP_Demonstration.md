@@ -1,6 +1,6 @@
 # Functional Programming and Design Patterns in the Financial Management Tool
 
-This document demonstrates how the project applies various Functional Programming (FP) principles and design patterns. For each FP principle, we provide an example from the code, explain why it is a good application of FP, and then provide a hypothetical example that would break the concept. We also highlight examples of array functional programming methods and show how design patterns are applied in the project.
+This document demonstrates how the project applies various Functional Programming (FP) principles and design patterns. For each FP principle, I provide an example from the code, explain why it is a good application of FP, and then provide a hypothetical example that would break the concept. I also highlight examples of array functional programming methods and show how design patterns are applied in the project.
 
 ---
 
@@ -273,7 +273,7 @@ var globalFilterByDate = function(transactions, date) {
 
 ### Application
 
-We use factory functions to create module instances. For example, `createTransaction()` returns an object with functions for transaction management. This abstracts the creation process and allows for flexible instantiation.
+I use factory functions to create module instances. For example, `createTransaction()` returns an object with functions for transaction management. This abstracts the creation process and allows for flexible instantiation.
 
 ```javascript
 // Factory Pattern Example
@@ -283,7 +283,7 @@ const newState = transactionModule.addTransaction([], { id: 1, amount: 50 });
 
 ### Hypothetical Example that Breaks the Factory Pattern
 
-A bad approach would be to instantiate objects directly without any abstraction, which may result in repetitive code and less flexibility. For example, if we manually create transaction objects and duplicate logic everywhere:
+A bad approach would be to instantiate objects directly without any abstraction, which may result in repetitive code and less flexibility. For example, if I manually create transaction objects and duplicate logic everywhere:
 
 ```javascript
 // Direct instantiation without a factory
